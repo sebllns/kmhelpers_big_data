@@ -35,3 +35,17 @@ done
 
 ~5s per profile command
 
+Looking to generated files, biggest sample is found in profile/data_4/profile.yaml
+```
+biggest_sample: ('data_4_0018995', 23529197990892)
+max_kmer_count: 25776858722105
+```
+
+Compose 
+
+```
+kmhelpers compose -o compose -n index list/data_1.jsonl --profiles-file profile/data_4/profile.yaml   
+```
+
+46.50s time
+~2GB peak RAM
